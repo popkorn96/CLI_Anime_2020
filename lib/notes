@@ -2,7 +2,7 @@
 
 2. git add . - compiles changes to commit list
 
-3. git commit m- " " - commits changes with message in quotations, message will show in github repository
+3. git commit -m" " - commits changes with message in quotations, message will show in github repository
 
 4. git push origin master - pushes changes onto github repository 
 
@@ -12,15 +12,10 @@ Fall Anime 2020 app with MyAnimeList scraping - no API
 1. Welcome the user and asks user to choose a song based on the shown list
 3. Return a list of all 2020 anime 
 4. Asks user to choose an anime to learn more, or exit 
-4. Show a description of the anime with subgenres and release date 
+4. Show a description of the anime and release date 
 
-we need to make:
+We need to make:
 - a CLI class
 - a Scraper class
 - an Anime class
 
-
--- environment folder
-    -I needed to integrate
--- bin folder 
-    -I was able to get rid of the need to put Ruby to run the bin file

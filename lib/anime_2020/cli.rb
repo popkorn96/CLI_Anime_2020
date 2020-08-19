@@ -1,3 +1,7 @@
+
+
+
+
 class CLI
     #this method calls get anime, the scraper, and list_anime, the welcome message and list of anime
     def call
@@ -19,7 +23,7 @@ class CLI
     #this method shows a numbered list of the anime and directs to the more_info method
     def list_all
         Anime.all.sort{|a,b| a.name <=> b.name}.each_with_index do |name,i|
-            puts "#{i+1}. #{anime.name}"
+            puts "#{i+=1}. #{anime.name}"
         end
         self.more_info
     end
