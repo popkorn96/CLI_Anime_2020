@@ -1,3 +1,3 @@
-require "./lib/anime/cli"
-require "./lib/anime/project_scraper"
-require "./lib/anime/anime"
+require "./lib/anime_2020/cli"
+require "./lib/anime_2020/scraper"
+require "./lib/anime_2020/anime"
