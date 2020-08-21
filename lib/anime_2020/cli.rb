@@ -19,10 +19,10 @@ class CLI
         puts "This is a list of anime that has come out, or will come out in 2020!"
         puts ""
         sleep(5.5)
-        self.list_all
+        self.list_all_titles
     end
     #this method shows a numbered list of the anime and directs to the more_info method
-    def list_all
+    def list_all_titles
         Anime.all.sort{|a,b| a.name <=> b.name}.each_with_index do |anime,i|
             puts "#{i+1}. #{anime.name}"
         end
@@ -40,23 +40,42 @@ class CLI
             array = Anime.all.uniq.sort{|a,b| a.name <=> b.name}
             anime = array[input-1]
             puts ""
-            puts "Anime: #{anime.name}"
+            puts "      Anime: #{anime.name}"
             puts ""
-            puts "Description: #{anime.description}"
+            puts "      Description: #{anime.description}"
             puts ""
-            puts "Release date: #{anime.release}"
+            puts "      Release date: #{anime.release}"
             puts ""
+            self.exit
+
         else input < 0 && input > Anime.all.length
             puts ""
             puts "Invalid number, please try again :) "
             puts ""
             sleep(2.5)
-            self.list_all
-          end
+            self.list_all_titles
         end
-
-
-
     end
+    #this method gives the user the list to choose from again and the option to exit the app
+    def exit
+        sleep(2)
+        puts "Enter 'back' to see the full list of anime again, or enter 'exit' to quit :) "
+        puts ""
+        input = gets.strip
+        case input
+        when "back"
+            self.list_all_titles
+        when "exit"
+            puts ""
+            puts "  Thank you for checking out this year's newest anime!!"
+            puts ""
+            puts "  Source: Myanimelist.com"
+            puts ""
+        else
+            puts "Invalid entry, please try again :) "
+            self.exit
+        end
+    end
+end
 #binding.pry
 

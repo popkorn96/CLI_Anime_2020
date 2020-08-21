@@ -13,8 +13,4 @@ class Anime
         @@all
     end
 
-    #def self.find_by_number(number)
-     #   self.all.find{|anime| anime.number == number}
-    #end
-
 end
