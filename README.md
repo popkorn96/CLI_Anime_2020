@@ -1,8 +1,6 @@
 # Anime2020
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/anime_2020`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Anime 2020! This app will allow you to browse 2020's newest anime! It includes information about their synopsis and release date so we can make sure to know when to anticipate the premieres! Titles include Haikyuu!! To the top 2nd Season and the upcoming series premiere Wave!!:Surfing Yappe!!
 
 ## Installation
 
